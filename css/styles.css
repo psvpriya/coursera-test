@@ -1,0 +1,51 @@
+/********** Base styles **********/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    padding: 10px;
+}
+
+
+#margin {
+    margin: 10px;
+    border: 1px solid black;
+    background-color: gray;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+ p {
+    float: none;
+    padding: 20px;
+}
+
+ div {
+    float: right;
+    border: 1px solid black;
+    width: 33.3%;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.chicken {
+    background-color: pink;
+}
+.beef {
+    color: white;
+    background-color: brown;
+}
+.sushi {
+    background-color:darkkhaki;
+}
