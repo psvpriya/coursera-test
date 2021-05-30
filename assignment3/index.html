@@ -1,145 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA_Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>David Chu's My Page</title>
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/styles.css">
-   <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-   <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <title>Assignment 3</title>
+  <!-- All css plugins -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- All fonts API refernces here -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+  <!-- All js refernces here. jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 
 <body>
-   <header>
-      <nav id="header-nav" class="navbar navbar-default">
-         <div class="container-fluid">
-            <div class="navbar-header">
 
-               <!-- Code for initial logo of restraunt-->
-               <a href="index.html" class="pull-left visible-md visible-lg">
-                  <div id="logo-img"></div>
-               </a>
 
-               <!-- the restaurant name and certificate defined under navbar-brand so that even in reponsive mobile view the brand is visible. But other components gets collapsed-->
-               <div class="navbar-brand">
-                  <a href="index.html">
-                     <h1>David Chu's China Bistro</h1>
-                  </a>
-                  <p>
-                     <img src="images/star-k-logo.png" alt="Kosher certification">
-                     <span>Kosher Certified</span>
-                  </p>
-               </div>
 
-               <!--This is a toggle button code for responsive mobile view-->
-               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                  data-target="#collapse-nav-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-               </button>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div id="collapse-nav-1" class="collapse navbar-collapse navbar-right">
-               <ul id="nav-list" class="nav navbar-nav">
-                  <li>
-                     <a href="menu-categories.html"><span class="glyphicon glyphicon-cutlery"></span><br
-                           class="hidden-xs"> Menu</a>
-                  </li>
-                  <li>
-                     <a href="#"><span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
-                  </li>
-                  <li>
-                     <a href="#"><span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
-                  </li>
-                  <li id="phone" class="hidden-xs">
-                     <a href="tel:410-602-5008"><span>410-602-5008</span></a>
-                     <div>* We Deliver</div>
-                  </li>
-               </ul>
-            </div>
-
-         </div>
-      </nav>
-   </header>
-
-   <div id="call-btn" class="visible-xs">
-      <a class="btn" href="tel:410-602-5008">
-         <span class="glyphicon glyphicon-earphone"></span>410-602-5008
-      </a>
-   </div>
-   <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
-
-   <div id="main-content" class="container">
-      <div class="jumbotron">
-         <img src="images/jumbotron_1200.jpg" alt="Picture of Restaurant" class="img-responsive visible-xs">
+  <nav id="header-nav" class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-button-menu"
+          aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <h1>Food, LLC</h1>
+        </a>
       </div>
 
-      <div id="home-tiles" class="row">
-         <div class="col-md-4 col-sm-6 col-xs-12">
-            <a href="menu-categories.html">
-               <div id="menu-tile">
-                  <span>menu</span>
-               </div>
-            </a>
-         </div>
-         <div class="col-md-4 col-sm-6 col-xs-12">
-            <a href="#">
-               <div id="specials-tile">
-                  <span>specials</span>
-               </div>
-            </a>
-         </div>
-         <div class="col-md-4 col-sm-12 col-xs-12">
-            <a href="https://goo.gl/maps/42wL4VWzHJhKBrGeA" target="_blank">
-               <div id="map-tile">
-                  <iframe
-                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.675246405347!2d-76.71387678477612!3d39.36359027950145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid%20Chu&#39;s%20China%20Bistro!5e0!3m2!1sen!2sus!4v1621911676773!5m2!1sen!2sus"
-                     width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                  <span>map</span>
-               </div>
-            </a>
-         </div>
+      <div id="navbar-button-menu" class="collapse navbar-collapse">
+        <ul id="nav-list" class="nav navbar-nav">
+          <li class="visible-xs">Chicken</li>
+          <li class="visible-xs">Beef</li>
+          <li class="visible-xs">Sushi</li>
+        </ul>
       </div>
 
-   </div>
+    </div>
+  </nav>
 
-   <div class="panel-footer">
-      <div class="container">
-         <div class="row">
-            <div id="hours" class="col-sm-4">
-               <span>Hours:</span><br>
-               Sun-Thurs: 11:15am - 10:00pm<br>
-               Fri: 11:15am - 2:30pm<br>
-               Saturday Closed
-               <hr class="visible-xs">
-            </div>
-            <div id="address" class="col-sm-4">
-               <span>Address:</span><br>
-               7105 Reisterstown Road<br>Baltimore, MD 21215
-               <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>
-               </p>
-               <hr class="visible-xs">
-            </div>
-            <div id="testimonials" class="col-sm-4">
-               <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>
-               <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>
-            </div>
-         </div>
-         <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>
+  <div class="text-center">
+    <h2>Our Menu</h2>
+  </div>
+
+  <div id=body-div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12">
+        <h3 class="text-center">Chicken</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum metus nisl, commodo ut volutpat vitae,
+          cursus sit amet lorem. Morbi blandit, leo et porttitor cursus, magna justo dictum nibh, id pulvinar quam eros
+          non libero. Aenean luctus ornare diam non tempus. Pellentesque eleifend dui eget purus eleifend commodo.
+          Suspendisse potenti. Etiam eu sem ac dolor rhoncus lacinia id et arcu. Duis accumsan, ex placerat aliquam
+          sagittis, nisl erat euismod nisl, eget placerat dui nulla a eros. Quisque consequat tortor et nulla tempor
+          pharetra. Curabitur et pharetra ligula. Aliquam mauris turpis, lacinia ac dapibus sit amet, mollis et elit.
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Quisque auctor lectus
+          in velit congue, non efficitur nisi lobortis. Nullam nec eleifend sem. Nulla facilisi.<br><br>
+
+          Maecenas eget dapibus nisi. Proin finibus, nisi eu accumsan mollis, felis tellus eleifend lectus, porta varius
+          erat urna ut lacus. Vestibulum eget bibendum ipsum, eget aliquam enim. Maecenas faucibus ultricies erat, eu
+          consectetur ligula sollicitudin eu. Sed nec odio nec libero varius vehicula eu vitae felis. Cras interdum
+          mattis nisi, eu gravida elit dictum vitae. Sed in egestas eros, non congue velit. Maecenas ultrices ut neque
+          interdum varius. Nulla facilisi. Sed tempus lacinia nisl ac mattis. Nullam fringilla eleifend orci, rhoncus
+          hendrerit dolor scelerisque vel. Sed sit amet orci eget enim tempor pharetra sed eu turpis. Orci varius
+          natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus in magna nisl. Vestibulum
+          quis lacus dolor.<br><br>
+
+          Aenean quis pulvinar risus, nec pharetra turpis. Duis condimentum ante in elit malesuada, in tempor libero
+          lobortis. Cras ornare viverra dui et tincidunt. Curabitur faucibus, sem non pulvinar lobortis, massa ante
+          tincidunt mi, tempus ultricies augue tellus ut ipsum. Aenean scelerisque vitae nibh ut hendrerit. Cras a
+          hendrerit ex. Suspendisse pellentesque lectus at ligula malesuada molestie.
+        </p>
       </div>
-   </div>
+    </div>
+  </div>
 
 
-   <script src="js/jquery-3.6.0.min.js"></script>
-   <script src="js/bootstrap.min.js"></script>
-   <script src="js/script.js"></script>
+
 </body>
 
 </html>
